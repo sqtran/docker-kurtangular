@@ -6,4 +6,4 @@ RUN npm install
 RUN npm install grunt-cli bower -g
 RUN bower install --allow-root
 RUN gem install sass compass
-CMD /bin/bash -c "grunt serve"
+CMD /bin/bash -c "git pull && grunt serve"
